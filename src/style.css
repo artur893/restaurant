@@ -21,6 +21,7 @@ time, mark, audio, video {
 
 #content {
     background-image: url(./pizza.jpg);
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     min-width: 100vw;
@@ -29,6 +30,7 @@ time, mark, audio, video {
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    font-family: sans-serif;
 }
 
 header {
@@ -51,10 +53,45 @@ ul {
 
 }
 
+li {
+    cursor: pointer;
+}
+
 .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: white;
     background-color:rgba(0, 0, 0, 0.8);
     width: 40vw;
     font-size: 24px;
     padding: 20px;
+    gap: 20px;
+    transition: 500ms;
+}
+
+.main>p {
+    margin: 8px;
+}
+
+img.chef {
+    width: 50%;
+    border-radius: 280px;
+    margin: 12px;
+}
+
+.pizzaCard {
+    border: solid 1px;
+    width: 25vw;
+    height: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 10px;
+}
+
+.pizzaImg {
+    width: 50%;
 }

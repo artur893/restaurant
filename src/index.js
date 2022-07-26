@@ -1,4 +1,6 @@
 import './style.css';
+import home from './home.js'
+import menu from './menu.js'
 
 const content = document.querySelector("#content")
 
@@ -24,19 +26,18 @@ ul.appendChild(li1)
 ul.appendChild(li2)
 ul.appendChild(li3)
 
-//MAIN DIV
-const mainDiv = document.createElement("div")
-const p1 = document.createElement("p")
-const p2 = document.createElement("p")
-const p3 = document.createElement("p")
+home()
 
-mainDiv.classList.add("main")
+li1.addEventListener("click", function () {
+  const mainDiv = document.querySelector(".main")
+  mainDiv.remove()
+  home()
+})
 
-p1.textContent = "Best pizza in your city!"
-p2.textContent = "Made with passion since 2000."
-p3.textContent = "Order online or visit us."
+li2.addEventListener("click", function(){
+  const mainDiv = document.querySelector(".main")
+  mainDiv.remove()
+  menu()
+})
 
-content.appendChild(mainDiv)
-mainDiv.appendChild(p1)
-mainDiv.appendChild(p2)
-mainDiv.appendChild(p3)
+
