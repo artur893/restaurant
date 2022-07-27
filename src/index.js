@@ -28,20 +28,30 @@ ul.appendChild(li2)
 ul.appendChild(li3)
 
 home()
+li1.classList.add("active")
 
 li1.addEventListener("click", function () {
+  li1.classList.add("active")
+  li2.classList.remove("active")
+  li3.classList.remove("active")
   const mainDiv = document.querySelector(".main")
   mainDiv.remove()
   home()
 })
 
-li2.addEventListener("click", function(){
+li2.addEventListener("click", function () {
+  li2.classList.add("active")
+  li1.classList.remove("active")
+  li3.classList.remove("active")
   const mainDiv = document.querySelector(".main")
   mainDiv.remove()
   menu()
 })
 
-li3.addEventListener("click", function(){
+li3.addEventListener("click", function () {
+  li3.classList.add("active")
+  li2.classList.remove("active")
+  li1.classList.remove("active")
   const mainDiv = document.querySelector(".main")
   mainDiv.remove()
   contact()
