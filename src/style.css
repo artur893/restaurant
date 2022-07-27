@@ -87,6 +87,10 @@ video {
     vertical-align: baseline;
 }
 
+:root {
+    overflow-x: hidden;
+}
+
 #content {
     background-image: url(./pizza.jpg);
     background-attachment: fixed;
@@ -165,7 +169,8 @@ img.chef {
 }
 
 .pizzaCard:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
+    box-shadow: 0 0 10px white;
 
 }
 

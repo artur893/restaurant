@@ -1,6 +1,7 @@
 import './style.css';
 import home from './home.js'
 import menu from './menu.js'
+import contact from './contact.js';
 
 const content = document.querySelector("#content")
 
@@ -38,6 +39,12 @@ li2.addEventListener("click", function(){
   const mainDiv = document.querySelector(".main")
   mainDiv.remove()
   menu()
+})
+
+li3.addEventListener("click", function(){
+  const mainDiv = document.querySelector(".main")
+  mainDiv.remove()
+  contact()
 })
 
 
