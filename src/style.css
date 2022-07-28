@@ -87,6 +87,14 @@ video {
     vertical-align: baseline;
 }
 
+@font-face {
+    font-family: 'MyFont';
+    src: url('./GreatVibes-Regular.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+
 :root {
     overflow-x: hidden;
 }
@@ -106,6 +114,8 @@ video {
 }
 
 header {
+    font-family: 'MyFont';
+    font-style: italic;
     font-size: 52px;
     color: white;
     background-color: rgba(0, 0, 0, 0.9);
